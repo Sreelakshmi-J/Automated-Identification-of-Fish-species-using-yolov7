@@ -1,0 +1,15 @@
+
+
+# download command/URL (optional)
+download: bash ./scripts/get_coco.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./coco/train2017.txt  #2500 images
+  val: ./coco/val2017.txt  #1256 images
+test: ./coco/test-dev2017.txt  # 699 of 2500 images, submit to https://competitions.codalab.org/competitions/20794
+
+# number of classes
+nc: 26
+
+# class names
+names: [ Lutjanidae -Snappers','Carangidae -Jacks','Acanthuridae -Surgeonfishes','Scaridae -Parrotfishes','Scombridae -Tunas','grouper','Shark -Selachimorpha','Serranidae -Groupers','jack','snapper','tuna','shark','parrot','surgeon','damsel','trigger','Zanclidae (Moorish Idol)','Pomacentridae -Damselfishes','Labridae -Wrasse','angel','wrasse','Zanclidae -Moorish Idol','Ephippidae -Spadefishes','Pomacanthidae -Angelfishes','Balistidae -Triggerfishes','spade'. ]
